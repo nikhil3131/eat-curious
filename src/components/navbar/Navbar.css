@@ -1,0 +1,158 @@
+.navbar{
+    position: absolute;
+    z-index:90;
+    top:0;
+    width:100%;
+    background-color:rgba(4, 47, 26, 0);
+}
+
+a{
+    text-transform:uppercase;
+    color:white;
+}
+
+.navlinks-container{
+    margin-top:2em;
+}
+
+.links{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.logo{
+    position: relative;
+    z-index: 92;
+    font-size: var(--fs-heading);
+    text-transform:capitalize;
+    font-family: var(--ff-heading);
+    text-align:center;
+    line-height:.87em;
+    color:white;
+}
+
+.contactus{
+    width:10.625em;
+    padding:1em;
+    font-size: var(--fs-body);
+    text-transform:uppercase;
+    font-family:tusker-grotesk;
+    background-color:rgba(255, 115, 181, 1);
+    border-radius:5px;
+}
+
+ /* changing contact-us button width */
+@media (max-width:1080px){
+    .contactus{
+        width:10em;
+        padding:.7em;
+    }
+}
+
+/* contact us button animation */
+.contactus{
+    overflow:hidden;
+}
+
+.content{
+    display:flex;
+    white-space:nowrap;
+}
+
+.content a{
+    margin-right: var(--fs-body);
+    color:black;
+}
+
+.content:hover{
+    animation:movement .9s linear infinite;
+}
+
+@keyframes movement{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+.hamburger{
+    display:none;
+}
+/* ********************************************MOBILE DESIGN*************************************************************************** */
+.hamburger img,.hamburger-closing img{
+    width:35px;
+}
+
+.hamburgerMenu span{
+    position: fixed;
+    z-index:91;
+    top:15px;
+    right:15px;
+    padding:3px 3px;
+    border-radius:5px;
+    background-color:rgba(255, 115, 181, 1)
+}
+.hamburger-closing img{
+    background-color:white;
+}
+
+.hamburgerClose span{
+    position: absolute;
+    z-index: 91;
+    top:15px;
+    right:15px;
+    padding:3px 3px;
+    border-radius:5px;
+    background-color:black;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    z-index:91;
+    background-color:rgba(255, 115, 181, 1);
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hamburger-links{
+    text-align:center;
+}
+
+.hamburger-links a{
+    font-family:tusker-grotesk;
+    color:black;
+    font-size:3em;
+}
+
+.socialmedia div a img{
+    width:30px;
+    height:30px;
+}
+
+.socialmedia{
+    position: absolute;
+    bottom:0;
+    display:flex;
+    justify-content:space-around;
+    width:100%
+}
+
+@media (max-width:765px){
+    .about,.products,.recipes,.contactus{
+        display:none;
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    .logo{
+        margin-top:-.6em;
+    }
+}

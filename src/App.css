@@ -1,0 +1,117 @@
+:root{
+    @font-face{
+      font-family:'tusker-grotesk';
+      src:url('../../assets/fonts/TuskerGrotesk/TuskerGrotesk/TuskerGrotesk-8700Bold.ttf')
+    }
+  
+    --ff-heading: "tusker-grotesk";
+  
+    --fs-heading: 2.18em;
+    --fs-body: 1em;
+    --fs-xl:11em;
+
+    --mg-top:-8em;
+    --mg-bottom:-10em;
+
+    /* changing eat-curious logo size for mobile devices */
+    @media (max-width:765px){
+        --fs-heading: 1.14em;
+    }
+
+    /* changing font size and burger margin as display size decreases */
+    @media (max-width:1520px){
+        --fs-xl:10em;
+        --mg-top:-9em;
+        --mg-bottom:-9em;
+    }
+
+    @media (max-width:1450px){
+        --fs-xl:9.5em;
+        --mg-top:-7em;
+        --mg-bottom:-8em;
+    }
+
+    @media (max-width:1380px){
+        --fs-xl:9em;
+        --mg-top:-7em;
+        --mg-bottom:-8em;
+    }
+
+    @media (max-width:1310px){
+        --fs-xl:8.5em;
+        --mg-top:-6em;
+        --mg-bottom:-6em;
+    }
+
+    @media (max-width:1240px){
+        --fs-xl:8em;
+        --mg-top:-5em;
+        --mg-bottom:-6em;
+    }
+
+    @media (max-width:1170px){
+        --fs-xl:7.5em;
+        --mg-top:-5em;
+        --mg-bottom:-6em;
+    }
+
+    @media (max-width:1095px){
+        --fs-xl:7em;
+        --mg-top:-4em;
+        --mg-bottom:-5em;
+    }
+
+    @media (max-width:1025px){
+        --fs-xl:6.5em;
+        --mg-top:-3.4em;
+        --mg-bottom:-3em;
+    }
+
+    @media (max-width:970px){
+        --fs-xl:6em;
+        --mg-top:-3.4em;
+        --mg-bottom:-3em;
+    }
+
+    @media (max-width:900px){
+        --fs-xl:5.5em;
+        --mg-top:-3.4em;
+        --mg-bottom:-3em;
+    }
+
+    @media (max-width:830px){
+        --fs-xl:5em;
+        --mg-top:-3.4em;
+        --mg-bottom:-3em;
+    }
+
+    /* changing font size and burger margin for mobile devices */
+    @media (max-width:765px){
+        --fs-xl:9em;
+        --mg-top:0em;
+        --mg-bottom:3em;
+    }
+
+    @media (max-width:710px){
+        --fs-xl:5em;
+        --mg-top:0em;
+        --mg-bottom:0em;
+    }
+
+    @media (max-width:400px){
+        --mg-top:0em;
+        --mg-bottom:0em;
+    }
+}
+
+main{
+    font-family: 'Public Sans', sans-serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+li{
+    list-style-type: none;
+}

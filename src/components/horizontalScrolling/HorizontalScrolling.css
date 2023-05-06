@@ -1,0 +1,65 @@
+/* code related to styling of element */
+@font-face{
+    font-family:'tusker-grotesk';
+    src:url('../../assets/fonts/TuskerGrotesk/TuskerGrotesk/TuskerGrotesk-8700Bold.ttf')
+}
+
+.container{
+    font-size: 0.9em;
+    padding: 1em 0 1.4em;
+    color: #042f1a;
+    background-color: #ff73b5;
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing:-1px;
+    word-spacing:2px;
+    animation: popup 1s ease-in;
+    font-family:tusker-grotesk
+}
+
+@keyframes popup{
+    from{
+        height:0;
+        width:0;
+    }to{
+        height:0;
+        width:0;
+    }
+}
+
+.material-symbols-outlined{
+    margin: 0 1.2em 0 1.2em;
+}
+
+/* all of the code is related to animation only */
+.container{
+    position: fixed;
+    z-index: 50;
+    display: flex;
+    overflow: hidden;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+.marquee{
+    animation: marquee 40s linear infinite;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+@keyframes marquee{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:766px){
+    .container{
+        height:50px;
+        padding:.5em .1em;
+        font-size:.8em;
+    }
+}

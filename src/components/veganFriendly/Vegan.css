@@ -1,0 +1,31 @@
+.vegan{
+    position: fixed;
+    z-index:50;
+    bottom:8em;
+    left:-1em;
+}
+
+.vegan img{
+    width:10em;
+    animation:rotation 20s linear infinite;
+}
+
+@media (max-width:765px){
+    .vegan img{
+        width:6em;
+    }
+
+    .vegan{
+        bottom:6em;
+        left:-1.5em;
+    }
+}
+
+@keyframes rotation {
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}

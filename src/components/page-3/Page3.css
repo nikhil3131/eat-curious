@@ -1,0 +1,144 @@
+.page3-container{
+    position: sticky;
+    z-index:5;
+    bottom:0;
+    min-height:100vh;
+    height:auto;
+    width:100%;
+    background-color:rgba(255, 246, 246, 1);
+    padding:2em 2em;
+    display:flex;
+    justify-content:space-around;
+    color:rgba(4, 47, 26, 1);
+}
+.page-3-heading-subheading{
+    padding:15em 1em 2em 1em;
+}
+
+.page-3-heading-subheading h1{
+    font-family: var(--ff-heading);
+    font-size:3.5em;
+    text-transform:uppercase;
+    transform:scale(1,1.4);
+    line-height:1.1em;
+    padding:0 1em 1em 3em;
+}
+
+.page3-container img{
+    padding:1em 1em 2em 5em;
+    width:80em;
+}
+
+.page-3-heading-subheading p{
+    padding:0 15em 2em 8.4em;
+    font-size:1.3em;
+    font-weight:lighter;
+}
+
+@media (max-width:480px){
+    .page3-container img{
+        width:23em;
+    }
+}
+
+@media (min-width:480px) and (max-width:765px){
+    .page3-container img{
+        width:30em;
+    }
+}
+
+@media (min-width:1215px){
+    .page3-container img{
+        width:80em;
+    }
+}
+
+@media (min-width:765px) and (max-width:1024px){
+    .page3-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        padding:4em 0;
+        min-height:0;
+        height:auto;
+        text-align:center;
+    }
+
+    .page3-container img{
+        width:35em;
+    }
+
+    .page-3-heading-subheading h1{
+        font-size:3em;
+        margin-top:-4em;
+        margin-bottom:1.5em;;
+        padding:0 3em;
+    }
+
+    .page-3-heading-subheading p{
+        font-size:1.1em;
+        padding:0 6em;
+        text-align:center;
+        line-height:1.5em;
+        letter-spacing:1px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1216px){
+    .page3-container img{
+        width:23em;
+        padding:0 0;
+        padding-bottom:4em;
+        padding-left:1em;
+    }
+
+    .page-3-heading-subheading{
+        padding:3em 0;
+    }
+
+    .page-3-heading-subheading h1{
+        font-size:3em;
+        padding:0 0;
+        padding:3em 0 2em 2em;
+    }
+
+    .page-3-heading-subheading p{
+        padding:0 0;
+        padding:0 1em 0 5em;
+    }
+}
+
+@media (max-width:766px){
+    .page3-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        padding:0 0;
+        min-height:0;
+        height:auto;
+        text-align:center;
+    }
+
+    .page3-container img{
+        padding:4em 1em 1em 4.5em;
+        text-align:center;
+    }
+
+    .page-3-heading-subheading h1{
+        font-size:2em;
+        text-align:center;
+        padding:0 1em 1em 1em;
+        margin-top:-6em;
+    }
+
+    .page-3-heading-subheading p{
+        font-size:1em;
+        padding:1em 3em 0 3em;
+        text-align:center;
+        line-height:1.5em;
+        letter-spacing:1px;
+    }
+}
+
